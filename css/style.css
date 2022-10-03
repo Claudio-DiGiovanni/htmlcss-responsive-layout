@@ -7,3 +7,75 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+/* General */
+
+.container{
+    max-width: 1140px;
+    padding: 0 1rem;
+}
+
+/* style */
+
+.nav-top{
+    background-color: #0084fd;
+    height: 5rem;
+}
+
+.nav-top .container{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-top ul{
+    list-style: none;
+    display: flex;
+}
+.nav-top a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-top .nav-link{
+    margin: 1.5rem;
+    font-size: 18px;
+}
+
+.nav-top .nav-link:hover{
+    text-shadow: rgba(0, 0, 0, 0.15) 3px 3px 3px;
+}
+
+.nav-top .btn{
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.nav-top .btn:hover{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.nav-top .hamburger{
+    font-size: 2rem;
+    display: none;
+    text-shadow: rgba(0, 0, 0, 0.15) 3px 3px 3px;
+}
+
+@media screen and (max-width:810px) {
+    .container{
+        
+    }
+    .nav-top .hamburger{
+        display: block;
+    }
+
+    .nav-top ul{
+        display: none;
+    }
+}
