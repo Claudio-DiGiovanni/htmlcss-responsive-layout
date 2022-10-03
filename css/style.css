@@ -20,6 +20,11 @@ body{
     text-align: center;
 }
 
+.container-s{
+    max-width: 900px;
+    padding: 0 1rem;
+    margin: auto;
+}
 /* navbar */
 
 .nav-top{
@@ -168,5 +173,95 @@ body{
 
     #features .card{
         width: 100%;
+    }
+}
+
+/* Planning */
+
+#planning{
+    background-color: #9792e4;
+}
+
+#planning .container-s{
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+#planning .planning{
+    width: calc(50% - 2rem);
+    height: 920px;
+    align-self: flex-end;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#planning .planning h2{
+    font-size: 30px;
+    margin: 2rem 0;
+}
+
+#planning .planning p{
+    font-size: 18px;
+    line-height: 1.5rem;
+    
+}
+
+#planning .app-developement{
+    width: calc(50% - 2rem);
+    background-color: white;
+    border-radius: 50px;
+    height: 700px;
+    margin-bottom: 2rem;
+    align-self: flex-end;
+}
+
+#planning .planning img{
+    width: 100%;
+    margin: 10rem 0;
+}
+
+#planning .app-developement img{
+    width: 100%;
+}
+
+#planning .app-developement h3{
+    font-size: 25px;
+    font-weight: 800;
+    margin: 1rem 0;
+}
+
+#planning .app-developement p{
+    font-style: italic;
+    padding: 2rem;
+}
+
+#planning .app-developement .btn{
+    font-size: 20px;
+    padding: 15px;
+    background-color: #9792e4;
+    border-radius: 50%;
+    margin-bottom: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#planning .app-developement .btn:hover{
+    box-shadow: rgb(223, 223, 223) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+@media screen and (max-width:810px) {
+    #planning .container-s{
+        display: block;
+    }
+    #planning .planning{
+        width: 100%;
+        height: fit-content;
+    }
+
+    #planning .app-developement{
+        width: 100%;
+        margin: 2rem 0;
+        height: fit-content;
     }
 }
