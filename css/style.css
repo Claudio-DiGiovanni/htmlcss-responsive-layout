@@ -64,7 +64,7 @@ body{
 }
 
 .nav-top .nav-link:hover{
-    text-shadow: rgba(0, 0, 0, 0.15) 3px 3px 3px;
+    text-shadow: rgba(0, 0, 0, 0.5) 3px 3px 3px;
 }
 
 .nav-top .btn{
@@ -96,20 +96,23 @@ body{
         display: block;
     }
     .nav-top ul{
-        display: none;
+        visibility: hidden;
         position: absolute;
         background-color: #0084fd;
-        top: 3rem;
-        right: 0;
+        top: 5rem;
+        right: -10rem;
         z-index: 99;
         text-align: center;
         border-radius: 0 0 20px 20px;
+        font-weight: 600;
     }
 
     
     .nav-top .hamburger:hover + ul{
+        visibility: visible;
         display: block;
         top: 5rem;
+        right: 0;
         transition: 1s;
     }
 
