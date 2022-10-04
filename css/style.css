@@ -25,6 +25,12 @@ body{
     padding: 0 1rem;
     margin: auto;
 }
+
+.container-xs{
+    max-width: 600px;
+    padding: 0 1rem;
+    margin: auto;
+}
 /* navbar */
 
 .nav-top{
@@ -94,6 +100,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    margin-bottom: 4rem;
 }
 
 #features .card{
@@ -311,6 +318,7 @@ body{
     border-radius: 50%;
     width: 250px;
     height: 250px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 375px) {
@@ -426,9 +434,11 @@ body{
 }
 
 #about-us .content img{
-    width: 100%;
+    width: 300px;
     height: 300px;
     border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 #about-us .content p{
@@ -471,4 +481,77 @@ body{
         display: block;
         margin: auto;
     }
+}
+
+/* Get started */
+
+#get-started{
+    background-color: #9792e4;
+    padding-bottom: 2rem;
+}
+
+#get-started h3{
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    padding: 3rem 0 2rem;
+}
+
+#get-started h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#get-started h1{
+    color: #fdc15f;
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+}
+
+#get-started p{
+    color: white;
+    margin-bottom: 4rem;
+}
+
+#get-started .btn{
+    background-color: white;
+    color: #9792e4;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#get-started .btn:hover{
+    box-shadow: rgb(223, 223, 223) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+#get-started .privacy{
+    margin: 3rem 0;
+}
+
+#get-started .privacy .policy{
+    color: white;
+}
+
+/* Footer */
+
+footer{
+    background-color: #333333;
+    color: white;
+}
+
+footer p{
+    padding: 2rem;
+}
+
+footer a{
+    color: white;
 }
