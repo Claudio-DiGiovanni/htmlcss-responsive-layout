@@ -31,6 +31,10 @@ body{
     padding: 0 1rem;
     margin: auto;
 }
+
+.btn{
+    white-space: nowrap;
+}
 /* navbar */
 
 .nav-top{
@@ -77,21 +81,40 @@ body{
 }
 
 .nav-top .hamburger{
-    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
     display: none;
     text-shadow: rgba(0, 0, 0, 0.15) 3px 3px 3px;
 }
 
 @media screen and (max-width:810px) {
-    .container{
-        
+    .nav-top .container{
+        position: relative;
     }
     .nav-top .hamburger{
         display: block;
     }
-
     .nav-top ul{
         display: none;
+        position: absolute;
+        background-color: #0084fd;
+        top: 3rem;
+        right: 0;
+        z-index: 99;
+        text-align: center;
+        border-radius: 0 0 20px 20px;
+    }
+
+    
+    .nav-top .hamburger:hover + ul{
+        display: block;
+        top: 5rem;
+        transition: 1s;
+    }
+
+    .nav-top li{
+        padding: 2rem 0;
     }
 }
 
@@ -138,7 +161,7 @@ body{
     color: white;
     background-color: #0084fd;
     border-radius: 50px;
-    padding: 10px;
+    padding: 1rem 5rem;
     font-weight: 500;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -161,6 +184,9 @@ body{
         width: 100%;
         margin-top: 2rem;
     }
+    #features .card .btn{
+        padding: 1rem 3rem;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -180,6 +206,9 @@ body{
 
     #features .card{
         width: 100%;
+    }
+    #features .card .btn{
+        padding: 1rem 5rem;
     }
 }
 
